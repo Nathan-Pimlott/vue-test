@@ -4,7 +4,7 @@ import Calculator from '../components/Calculator.vue'
 
 <template>
   <div>
-    <h2>Add</h2>
+    <h2 id="addTitle">Add</h2>
 
     <Calculator operation="add" />
   </div>

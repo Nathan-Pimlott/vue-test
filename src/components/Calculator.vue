@@ -12,14 +12,38 @@ const store = useCalculatorStore()
 <template>
   <div class="flexRow">
     <div class="numberContainer">
-      <button @click="store.num1 = store.num1 - 1" aria-label="Decrease number 1">-</button>
-      <p>{{ store.num1 }}</p>
-      <button @click="store.num1 = store.num1 + 1" aria-label="Increase number 1">+</button>
+      <button
+        id="decreaseNumber1Button"
+        @click="store.num1 = store.num1 - 1"
+        aria-label="Decrease number 1"
+      >
+        -
+      </button>
+      <p id="number1">{{ store.num1 }}</p>
+      <button
+        id="increaseNumber1Button"
+        @click="store.num1 = store.num1 + 1"
+        aria-label="Increase number 1"
+      >
+        +
+      </button>
     </div>
     <div class="numberContainer">
-      <button @click="store.num2 = store.num2 - 1" aria-label="Decrease number 2">-</button>
-      <p>{{ store.num2 }}</p>
-      <button @click="store.num2 = store.num2 + 1" aria-label="Increase number 2">+</button>
+      <button
+        id="decreaseNumber2Button"
+        @click="store.num2 = store.num2 - 1"
+        aria-label="Decrease number 2"
+      >
+        -
+      </button>
+      <p id="number2">{{ store.num2 }}</p>
+      <button
+        id="increaseNumber2Button"
+        @click="store.num2 = store.num2 + 1"
+        aria-label="Increase number 2"
+      >
+        +
+      </button>
     </div>
   </div>
 
@@ -28,7 +52,9 @@ const store = useCalculatorStore()
   </div>
 
   <div class="flexRow">
-    <h3 aria-live="polite">The calculated value is {{ store.calculatedValue }}</h3>
+    <h3 id="calculatedValue" aria-live="polite">
+      The calculated value is {{ store.calculatedValue }}
+    </h3>
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
   <header>
-    <h1>Calculator</h1>
+    <h1 id="headerTitle">Calculator</h1>
 
     <nav>
-      <RouterLink to="/">Add</RouterLink>
-      <RouterLink to="/subtract">Subtract</RouterLink>
-      <RouterLink to="/multiply">Multiply</RouterLink>
-      <RouterLink to="/divide">Divide</RouterLink>
+      <RouterLink id="addLink" to="/">Add</RouterLink>
+      <RouterLink id="subtractLink" to="/subtract">Subtract</RouterLink>
+      <RouterLink id="multiplyLink" to="/multiply">Multiply</RouterLink>
+      <RouterLink id="divideLink" to="/divide">Divide</RouterLink>
     </nav>
   </header>
 </template>

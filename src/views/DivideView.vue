@@ -4,7 +4,7 @@ import Calculator from '../components/Calculator.vue'
 
 <template>
   <div>
-    <h2>Divide</h2>
+    <h2 id="divideTitle">Divide</h2>
 
     <Calculator operation="divide" />
   </div>
