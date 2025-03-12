@@ -4,9 +4,9 @@ import Calculator from '../components/Calculator.vue'
 
 <template>
   <div>
-    <h2>Add</h2>
+    <h2>Multiply</h2>
 
-    <Calculator operation="add" />
+    <Calculator operation="multiply" />
   </div>
 </template>
 
