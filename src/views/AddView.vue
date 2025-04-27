@@ -3,11 +3,15 @@ import Calculator from '../components/Calculator.vue'
 </script>
 
 <template>
-  <header>
-    <div>
-      <h2>Add!</h2>
+  <div>
+    <h2 id="addTitle">Add</h2>
 
-      <Calculator operation="add" />
-    </div>
-  </header>
+    <Calculator operation="add" />
+  </div>
 </template>
+
+<style scoped>
+h2 {
+  text-align: center;
+}
+</style>

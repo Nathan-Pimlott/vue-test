@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AddView from '../views/AddView.vue'
-import SubtractView from '../views/SubtractView.vue'
+
+import AddView from '@/views/AddView.vue'
+import SubtractView from '@/views/SubtractView.vue'
+import MultiplyView from '@/views/MultiplyView.vue'
+import DivideView from '@/views/DivideView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,14 +18,16 @@ const router = createRouter({
       name: 'subtract',
       component: SubtractView,
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue'),
-    // },
+    {
+      path: '/multiply',
+      name: 'multiply',
+      component: MultiplyView,
+    },
+    {
+      path: '/divide',
+      name: 'divide',
+      component: DivideView,
+    },
   ],
 })
 
